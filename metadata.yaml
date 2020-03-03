@@ -1,9 +1,25 @@
-name: null
-display-name: Null
-summary: A null charm that does nothing
+name: "null"
+display-name: "Null"
+summary: "A null charm that does nothing"
 maintainer: Opax <opax@katharostech.com>
 description: |
   A null charm that does nothing
+series:
+  - oneiric
+  - precise
+  - quantal
+  - raring
+  - saucy
+  - trusty
+  - utopic
+  - vivid
+  - wily
+  - xenial
+  - yakkety
+  - zesty
+  - artful
+  - bionic
+  - cosmic
 tags:
   # Replace "misc" with one or more whitelisted tags from this list:
   # https://jujucharms.com/docs/stable/authors-charm-metadata
