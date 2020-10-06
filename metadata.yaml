@@ -1,6 +1,6 @@
 name: "null"
 display-name: "Null"
-summary: "A null charm that does nothing"
+summary: A null charm that does nothing
 maintainer: Opax <opax@katharostech.com>
 description: |
   A null charm that does nothing
@@ -19,7 +19,7 @@ series:
   - zesty
   - artful
   - bionic
-  - cosmic
+  - focal
 tags:
   # Replace "misc" with one or more whitelisted tags from this list:
   # https://jujucharms.com/docs/stable/authors-charm-metadata

@@ -2,15 +2,10 @@
 set -e
 
 BUILD_DIR=./build
-TARGET_DIR=${BUILD_DIR}/charm_null
+TARGET_DIR=${BUILD_DIR}/null
 
-# Make sure target dir exists
-mkdir -p ${TARGET_DIR}
+lucky charm build
 
-# Clean the target dir if it has stuff in it
-rm -rf ${TARGET_DIR}/*
-
-# Copy files to build dir
-ls | grep -v "sh" | grep -v "build" | xargs cp -rt ${TARGET_DIR}
-
-echo "Charm built at: ${TARGET_DIR}"
+# Remove build / push scripts from build dir
+rm -f "${TARGET_DIR}/build_charm.sh"
+rm -f "${TARGET_DIR}/push_charm.sh"
